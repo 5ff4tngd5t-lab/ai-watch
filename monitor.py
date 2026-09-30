@@ -304,14 +304,16 @@ Markdown 表格：| # | 人物 | 标题 | 关键数据点 | 来源 |。从数据
             json={"model": model,
                   "messages": [{"role": "user", "content": prompt}],
                   "temperature": 0.4,
-                  "max_tokens": 8000},
-            timeout=600)
+                  "max_tokens": 32000},
+            timeout=900)
         r.raise_for_status()
         resp = r.json()
-        msg = resp.get("choices", [{}])[0].get("message", {}) or {}
+        choice = resp.get("choices", [{}])[0]
+        msg = choice.get("message", {}) or {}
         content = (msg.get("content") or "").strip()
         if not content:
-            print(f"[warn] LLM 返回空内容: {str(resp)[:300]}", file=sys.stderr)
+            print(f"[warn] LLM 返回空内容 (finish_reason={choice.get('finish_reason')}): "
+                  f"{str(resp)[:300]}", file=sys.stderr)
             return ""
         # 去掉模型可能包裹的 ```markdown 代码围栏
         content = re.sub(r"^```(?:markdown)?\s*", "", content)

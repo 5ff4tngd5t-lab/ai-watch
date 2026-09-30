@@ -83,6 +83,16 @@ TRACKING_PARAMS = ("utm_", "fbclid", "gclid", "spm", "ref", "si", "feature", "ve
 # 每人新闻线索上限（Google News 按相关度排序，取前 N 条最有价值的）
 MAX_NEWS_PER_PERSON = 10
 
+# ---------- 播客 RSS 源（2026-09 实测可用，经 iTunes API 确认的官方 feed） ----------
+PODCAST_FEEDS = [
+    ("Dwarkesh Podcast",    "https://apple.dwarkesh-podcast.workers.dev/feed.rss"),
+    ("Lex Fridman Podcast", "https://lexfridman.com/feed/podcast/"),
+    ("Acquired",            "https://feeds.transistor.fm/acquired"),
+    ("All-In Podcast",      "https://rss.libsyn.com/shows/254861/destinations/1928300.xml"),
+    ("The a16z Show",       "https://feeds.simplecast.com/JGE3yC0V"),
+    ("20VC",                "https://rss.libsyn.com/shows/61840/destinations/240976.xml"),
+]
+
 
 def norm_url(url):
     """去掉跟踪参数，用于跨周去重。"""
@@ -152,6 +162,37 @@ def fetch_youtube():
         except Exception as e:
             print(f"[warn] YouTube 频道抓取失败（已跳过，不影响其他信源）: {channel}: {e}",
                   file=sys.stderr)
+    return items
+
+
+def fetch_podcasts():
+    """播客 RSS 源，取窗口内新剧集并按标题匹配人名。失败时降级跳过。"""
+    items = []
+    cutoff_ts = time.time() - DAYS * 86400
+    for show, feed_url in PODCAST_FEEDS:
+        try:
+            feed = feedparser.parse(feed_url)
+            n = 0
+            for e in feed.entries:
+                ts = time.mktime(e.published_parsed) if e.get("published_parsed") else 0
+                if ts and ts < cutoff_ts:
+                    continue
+                title = html.unescape(e.get("title", "")).strip()
+                people = match_people(title)
+                if not people:
+                    continue
+                items.append({
+                    "title": title,
+                    "url": e.get("link", "").strip(),
+                    "source": f"{show} (播客)",
+                    "date": datetime.datetime.fromtimestamp(ts).strftime("%Y-%m-%d") if ts else "未知",
+                    "people": people,
+                    "snippet": "",
+                })
+                n += 1
+            print(f"[ok] 播客源完成: {show} ({n} 条命中)")
+        except Exception as e:
+            print(f"[warn] 播客源抓取失败（已跳过）: {show}: {e}", file=sys.stderr)
     return items
 
 
@@ -257,18 +298,29 @@ def push(webhook, md, total):
         print(f"[warn] 推送失败（不影响周报落盘）: {e}", file=sys.stderr)
 
 
+def norm_title(t):
+    """标题归一化，用于同一轮内跨信源去重（同一期节目可能同时出现在 YouTube 和 RSS）。"""
+    return re.sub(r"[\W_]+", " ", t.lower()).strip()
+
+
 def main():
     os.makedirs(DIGEST_DIR, exist_ok=True)
     state = load_state()
 
-    found = fetch_youtube() + fetch_news()
+    found = fetch_youtube() + fetch_podcasts() + fetch_news()
 
     new_items = []
+    seen_titles = set()
     for it in found:
         key = norm_url(it["url"])
-        if key and key not in state:
-            state[key] = {"title": it["title"], "date": str(datetime.date.today())}
-            new_items.append(it)
+        if not key or key in state:
+            continue
+        tkey = norm_title(it["title"])
+        if tkey and tkey in seen_titles:
+            continue
+        seen_titles.add(tkey)
+        state[key] = {"title": it["title"], "date": str(datetime.date.today())}
+        new_items.append(it)
 
     by_person = {p: [] for p in PEOPLE}
     for it in new_items:

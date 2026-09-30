@@ -390,8 +390,10 @@ def main():
 
     today = datetime.date.today().isoformat()
 
-    # 优先用 LLM 生成 WorkBuddy 版式整周报告；未配置 key 或调用失败时降级为简版
-    report = llm_weekly_report(by_person, today)
+    # 优先用 LLM 生成 WorkBuddy 版式整周报告；未配置 key、无线索或调用失败时降级为简版
+    report = None
+    if any(by_person.values()):
+        report = llm_weekly_report(by_person, today)
     is_full = bool(report)
     if not is_full:
         report = build_digest(by_person, {}, today)

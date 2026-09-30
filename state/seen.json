@@ -1,1 +1,402 @@
-{}
+{
+ "https://www.youtube.com/watch?v=vif8NQcjVf0": {
+  "title": "Jensen Huang: NVIDIA - The $4 Trillion Company & the AI Revolution",
+  "date": "2026-09-30"
+ },
+ "https://www.youtube.com/watch?v=hdcsTeCFE0I": {
+  "title": "Satya Nadella on the AI Doomer Slowdown, Microsoft’s Master Plan & Who Wins AI",
+  "date": "2026-09-30"
+ },
+ "https://thetwentyminutevc.libsyn.com/20vc-five-predictions-for-a-world-of-agents-the-ads-business-model-will-die-biggest-lessons-from-working-with-elon-musk-at-twitter-with-parag-agrawal-parallel": {
+  "title": "20VC: Five Predictions for a World of Agents | The Ads Business Model Will Die | Biggest Lessons from Working with Elon Musk at Twitter with Parag Agrawal, Parallel",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMickFVX3lxTE5KSllHMS1Cb2QyZVQ5QVh2SEJzamI0N2tfSjE0OGJYQ2hzdERiMldGZnpGZ3AtYUk2NU1FNGVLNGEwcU9pQUJUa0F4V0lZVXVfd1RGbGZQZF81b29EMWFoYUp5X051YkNsYjJmclJLR3Z4dw?oc=5": {
+  "title": "Sam Altman’s remarks at the United Nations Security Council - openai.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMif0FVX3lxTE9tRjZqS3R6VW1rR1UtMU9raVlfRnR0OFNZV1dGSWhIVDZYelFabjdjWTl3cmxMcEprRDQ0bDQzb2dxQUEzWk9GMS0wNU9SdG8yczRnTzh2WUxNWDdJVkFEaGZBcTZyMVJiOFpZQkFwTlVTY00tancyb25NWlpWc3M?oc=5": {
+  "title": "Sam Altman unveils \"dots,\" OpenAI's new AI personal agent - cbsnews.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMivgFBVV95cUxQc3E1WUxNcUdrRGFpS01WelpUTDBKS2Y0dEtLYllpemF6Q3FuZjd6ZG9IeU1FQm9WWEx2NF90LUxVOVJJZVg5NXRuNkF0a05iY1VEcnY4ZVZyQmU5Rl90aVJuR1lhOFFyRTRwRDFxQ0NFYnBlLXFWeHNMWWV3M0lvZTFhS1Z2TTJLX1JzNkd5MlljQkp1djAzdGlTQmRkaUFWdWlfMklJRmRHNkVfbUpSSF84REhJNWExRzhLcUZ3?oc=5": {
+  "title": "OpenAI CEO Sam Altman warns the UN of AI’s potential for ‘renaissance’ or ‘upheaval’ - apnews.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMicEFVX3lxTFBnYmxuWFJ2T3UxeFlEbFlOY3VvVjFzaHQ2U2Z2MHlPZ0Q5c01zQ19aQmlGNE1hcnBUQWk3WTlXSmk4cUI0ZFp3TTVndkNDa3Q1RFFWdjdjV1lZWDJVZkpmaldLdEowRXpkSEZid2piVUXSAXZBVV95cUxNMHZEbDdqaUUwYy1xbTYxQ1dSWTJBZGhRRS1BOThUWTVKQnpBSnl3aTktbkN3Vmx2WGR1clRVZExIdDF0TU5meWo2T0wzek1HZTNQZnQ1SjNhTm9PZTJOTkMxUkxiWVdjRnZ5R21ZR3dLTmZyeGRR?oc=5": {
+  "title": "OpenAI and Anthropic CEOs push for AI cooperation at UN after Trump rebuffs 'globalist scheme' to control it - CNBC",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiekFVX3lxTFBpVjVwMGVlU094aDA2ZFRRSEg4clpxa1dZMmdfRzdKdU15MVBzR2YzX2xQeXhfdkRHVmpoNWhYbGp1OXlWeF9kQ2w1czVOVzVVdHU4Umw5UkRVTDJIX1Q3ZmxDT3pXSWxFcUpxaUY2MFg2bTgwaDdETEZ3?oc=5": {
+  "title": "Opinion | Dear Congress: Here’s What You Should Ask A.I. Leaders - The New York Times",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMif0FVX3lxTE40TGtvSHVVUE1jRnZNbWU2TG1lNmllWWc5NDhDLWVSenItS0JyMGcxY2hwaEVjLVZZeWZxNTFTLUhWZmwxSG9LM0U0VVViWXNyaHN3WFhkYnZwVlk2OFhHcExhOUViMzRHWml0RW0xUXk5aXNFMkppenMzUE9QRFk?oc=5": {
+  "title": "OpenAI’s Altman and Anthropic’s Amodei address UN security council - The Guardian",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdkI5Q095YzRBbUFnV283OEpVMGMwTHVIaGVUcHlzcnFYYzJzc0lBd2R2bV80b3hVdE1OOVZNSGsycFZEVVpmdVM1T0xvRlBQbWJmcDNlaXFhVEJUMkprbGpUZWs4RnpoSWZlSVdMZ0RfYXpqam1Vd05vQ2V6NHlSNDU3SWVBdHJUbW81aVpFY0ZMRXVhS3RsQkpZbVlLTVhxOU5zVDNsSVNoMFBiaVc0cF81VQ?oc=5": {
+  "title": "Why Is Sam Altman a Free Man? - prospect.org",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdzRYeFFGTlhmbkR1cnVMaF9SRE0tNUUzMHVXNDVXUkhFVDZydi1JMWE3SEhoWnZ0ajQ2LTdTRnZGb3kxbUVaX3Fmbnp4VFZJbktkaG9ES0RxUFFLRS1OUDliaXNGM3h2QVZzNDVLOTFIZWJzNVFiUXhxWUQzYWduZFhUcEJXZw?oc=5": {
+  "title": "LIVE: Sam Altman delivers keynote address at OpenAI DevDay - Yahoo Finance",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiowFBVV95cUxONjVaQ3hxSkFIeXJrTHA4WGp0Um1ST3Vvd0JTbWh6SjZ2UnJ3WE56aDFseGNkT2wta3ljVVdFMEhBeXIyeGl4NkxJdUlPdW1tNVRDVGl3T3hPNl96WWpQb3hoRXRybFBlc2QzUlRaYVJ0cmVMZ3ptR09iMHl2bnhXSGpJMGFwVWljdEE5Qm9WcHNaWVlIWWZ1WHYtN2dIWVdqXzJN?oc=5": {
+  "title": "Inside the Biggest Feud in Artificial Intelligence - The Atlantic",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNFh2cDU1YlpBU3RtWEdGUkZJV2dJLVNOTGlOZUUwUzFKc0xBX3NGWGZoZnMyYnRqU05Bb3BuVnFMUmdwLWhnb0lVaTgxUkEwQjB3azBKUW9ROFhFQ1RDWk9TX3pObHYzYk94NjNRRXpWc291TWRIQ20yU0Ytb0ZpSjBvOTN1cFBxTnhwNjdGT002M3VrZkE?oc=5": {
+  "title": "Sam Altman outlined OpenAI's 3-part plan for dominance - Business Insider",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVUY1RXhlS1RMdm1HNm1yV2FFMU9nMWNiUThPQ1QyZVZPMXNZVmlxU01SSVJISndvRDJXbkJaZWNlYjZERDdkN2VBVkhxN2toMnhNNno3eEFtYUVmclhCQTZxamFfUEx3MXAwc2k4b2gtVzFlR0dwYTNiLWt3c19odi1HdmtIUThU?oc=5": {
+  "title": "Anthropic’s Dario Amodei gets the ‘SNL’ treatment - TechCrunch",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMigAFBVV95cUxNa01meU5ZWVpKYVJodDlpcExfZUdQbnBqVEc1UUl5TGg2YnFxT05yd0I5RU9vd2ltcjhMY1VCeVBsTGluNjJ3X2hyNkJEZFlUbHI3SmNsdWpGbzA2NmNEdTg4UjMwdEo2UzdsUHg5WUl0S085cXVMN1lwN1Q0UzBWdQ?oc=5": {
+  "title": "Scoop: Anthropic's Dario Amodei to have White House dinner with Trump - Axios",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMic0FVX3lxTFBmS3p3UklKQ2thNFVDMTRlNUttODQ5ZXRBY1ZnSUZ4OU5iVWlhMXNqTjZSY3lJa1duUXlOTkJxNHhmTnN3OFktd255YVpFNURmLW11a09QODZZNEtibllFOTVja0RydjR3am1BNEYzV0lRSVk?oc=5": {
+  "title": "Trump had private dinner with Anthropic CEO Dario Amodei - cbsnews.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMinwFBVV95cUxQOUVEUkVPXzdxVUc2VXA2LW1nS3hRWVM4U3hwWmptYnRQdEZJbWZjeXZEczJ2NFpmWWMyNDNOSHl0Y0thUTFJd05aZTRRTDRqNFUzSTZMNnFYU08yMzh3Q3JMNF80SlVjR0FnRFJfcFRNN0tTdE1kamFYc2xrd0FVWmZObHdDdmFldnU3MmJBaERob045a190QmNkN1JyZXc?oc=5": {
+  "title": "Dario Amodei of Anthropic to Dine With Trump at White House - The New York Times",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMieEFVX3lxTE5xeGdNWlloRHIxbVJOSnphc0htQTdvbUFXUUJTRzMtTlo0dVphSUg2VS01SzBGeE5PRjF5WlhwNG5NTnlTZWRFYlpmeUVJR2NxbXRoaTRlb1JzZVdFOUNtaW9adWZCN1VKQ2k0NEJwRi1LbjJvMUtzdQ?oc=5": {
+  "title": "'Saturday Night Live' spoofs Dario Amodei’s AI warnings on Weekend Update - Mashable",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUmJma2NROVpfMWh4ZjRzNk9OUFVUeG5lU3JZVnNaX2Q3Nm80RUUtUl94ZnJ5c28xOW1HRlp1aTQ1SDI3TmxQYjdVTk1RYlNFUzV0VXdCeEtWdVRTeDlTRkNlZVRYdkl4bHFydFpENHNRQTUxTktFRHVsVjFvMkc3VkZwTU44d0dJWXU4d2lhSTQxeXozNzQyeW1BOXNmMld1cmc?oc=5": {
+  "title": "I Urge You to Urge Others to Watch the ‘SNL’ Segment About Dario Amodei - Gizmodo",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiogFBVV95cUxQYTB1WUpwQjdzb2QyV1FTT01ydF9WOGVBVGtpeHVZTzFvd19jQXdJeUpJUmV2cW9wX0tKeXJLUXdGM3dVREx5cDd5ZFFPaUdHNDdUTHVqRS1PNEhmZWJ2U2RFeVNENGZSMVhCV1FWSGpaZWk1QXFqWTdjVXRxLTRMd1dlUWJ5ajhta2pGUHFXb25GOEtnX0RqQjFRWUU2bnd2RFE?oc=5": {
+  "title": "Trump and Anthropic CEO Dario Amodei Dine at the White House - wsj.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMirwFBVV95cUxOa0twcDJSMXo1OEVlVUVMMkpTWFhEemcyQ2I0NUU2LVdOU0c3TlpWbmZIcFJjRGg3Qk9IeGNlXy10RDYzRXAwWTQwa0hrd1pMRTZuV0pFdUliVWVRZUVINlk4MlpSRjZ4VVpFSTNYSk9PcVprZmhfU1RZVGVsWm5RTEdhaUlKMGxQNERGOEp2dndPc0hkYXc0MUxJT2IzRk9SRWVXV1Fyd2FnZkVOQkNj0gG0AUFVX3lxTFAtd0tkZUEzdjBKVG1Obm5CRnZpUFJ4Qy1rN0V2VDJYNEJUM0tFenNfLVhyWkJaOEU2OXdYS1J2YnpMTkdvVGI4c2ZyUDlRbmViVTFGUmpCM3lhLU1uSFEyZ0tQOU9XYWpLQXFxNnBKWThwMTlGQXRIdkhPaXhXa0pfRmVwdGRBNHlJbHhnVVlUOFJDMHlzV1lqeURMWktOYW8tZ2tOM0g0M1VHd21IbGNCMXBfeQ?oc=5": {
+  "title": "Anthropic CEO says AI could cure most major diseases within next decade - Fox Business",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbE5Yb3J6V1pEWDhyWlBfRW9KdFFUT0MyNGQ5Q1lUMFdnNENFNE42aExZSzdSX3ZoT3RmSWwyNVFxWGlQUWZWZkN3a1F4SV9oSTdLeFcyWDRYV3FYVnljQlN2X0djekxpWW1lQ2Y4bW1PcVQxb1VYYnlmUFJKUnFKZWV6S3lCR0RHejdvRDJWc0RMbUttZGMta19kMHRQeFc4WkpGNjhqZEtOUdIBrwFBVV95cUxNOHNSX05TWlVVUmxEMUl5Ml8zSFZFSEFSeFRtYU5McTVfQm9pOGRKczE5T0xPaTRMdTZseHE1azJtYTh2bWtMaHJUZHBJcV9ZYjl2MmZLeGh0WE1CUUlxZG9HcmdISmRHcjN1OEZMSE9XNGg2Yk0ySFBKMzBYZWJNdnItTkQ1XzR2bU1jRUx2eGpkNDJ1SDItTm9FNFRES3pHLUZoX1ZRZXhmMjBjdm53?oc=5": {
+  "title": "Anthropic CEO Amodei set to meet with Trump after missing state dinner - CNBC",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMipgFBVV95cUxNY2FzZjB2dms5M3Jya2JUbG00S1RnRmZuandBMnJSbHY3ZFNnb2tLZ19KMFdPaVl0dU5ZMVJRaE9hQXJnVzg4dTdtMXB3WTBBYzFzMEI4YklRdGlzTXdsWU8tYjkxcEtnY2xFMGJDMGNZTnVqeF9hVXh4dS0zcDY0b1NlTXhrMk1fY1RjaFBDTWJWd2ZzSTJzaFBuZXdCSDlZeTBFY0t3?oc=5": {
+  "title": "An ‘SNL’ Exchange That Captures the AI Disconnect - The Atlantic",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdFREVTNYMlJ0MzZFajhIUTdVeG5QYnVrbDBmSmJPUmFNZG54bEtQeWlLM2ZzQUZXakVWX05tcFMzemVJeVFIN1pPdDhJUkhtZ2dRa0RIbkpGMlRGNnVSdW1JZE5HTXBZaDVGNmxCdzBXajcxRTBET2N3a1lCcWdpN1FQRGhoZk9WZmprZ19rRG1PdWZ1X2FSc0JFb20zVVF3NkdCdHgyR1JtRGlVc1VLcXhKR1ZlUXZiUXpoMkZtNA?oc=5": {
+  "title": "Peter Thiel slams pope’s AI encyclical as gift to Chinese Communist Party - Politico",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOdHdPV0lOcnhQb1FUOXZFWl80RTRrcDJRa2xkUHVMdWlUNGJ6OXhYclBINnF0NnZzelo5SUt3T1c4STRReXpVOU9iRm5hWTZHa2M5blpncXdlNnZHMFlVMFBXREhESzJBUGRtS2FkdU40LTM3Tld3TFdubmR0Sl9yTXYxb0NmemVaVXVjdjBhRFpTOUVwc0xfY0tPSWJqU003aEpuZnZFb3VHWmdvbUItOVAxVk5KWl8yRG9xYW9sVWh0dnp2WlNWekN5b2h4Z1VVNjM5TlJDYmRpLUp1Y0JWcw?oc=5": {
+  "title": "Peter Thiel says Germany has a ‘fear of success’ problem—and fail to scale like Musk or Zuckerberg - Fortune",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSXpjaGtiay03MFRaRU54QVF3cldOcnk3QjhnRlEtMHFwRzVKd0ZLaU8yendfUWc1OVRkeFlaVTI5LVRLX2laR1c0LXVnV2NkRGxQaHFlR1hsM3k2WXlnRVpyVVZfRjcwcGxQZnNKc1hzOFlqcDBLYXlQUEJkMl9jQU9XSmFVV3ZTQUlFTFhKbVVsNGN5S2c?oc=5": {
+  "title": "Thiel: Slowing AI Requires a World Government - Yahoo",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMy1POVk0V21NRlJyRFhDSG9OaDFuWDNvT25iVkY3Q1hjT3ltUV9IUlBEVVh0WVZRalkyVzgyMENqN2JJSmdsVzctY1BMLXgtN2pJRXFndk9QUHlvUzJpOWg0dzZQeFhrRjlaVlBZRWg0YW1YNU9WQmRZcExKaDNNOUpYVDU1LTR5UkE?oc=5": {
+  "title": "Peter Thiel says America's anti-AI backlash is a self-inflicted wound - Business Insider",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY0lIMldHb3BDaTJuOXNIaVQ5WFRDMC1DTmdNa3ZKU1ZMSzZCRE9UVDNpQWRwWTZvYW4wM3N3aFl0TDV6S2lRYzY5SHRneGJaOG9sRThrR284NFo0aG9xdUotcnEyeWRPZzRoXzRtLUdrZjZoanV2VmYxdUluNXY0SEx1b1dqWWY0ajAtTE9QRVN1MURTZEdrQnlwRDc2VlpLN1E?oc=5": {
+  "title": "Peter Thiel on AI and tech stagnation and democracy - Marginal REVOLUTION",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiygFBVV95cUxNekJockVycVFtMXQ5U2Z5VE5YaUdkUkFmSWlaYTJqYmk1VGxGNlhnakp6cWcxanZxOHgzMy1jQVhucjRaTDVITXBpaTZaU1JUOWh2SWdtU2ZOUDNjVWpJU29ldThIdEN2TUVDcW04UDBkcWNUbnBqN0FycGZjOHNjMUtFYm9ONThEa1ZUWHVXMlBfNWo4czhfaHBlbkxpMHhnUFNFa1pCSW13SDByMzBvRlItZmt5M3YxSXR6eVVIRG0tTExBZnBJTGlB?oc=5": {
+  "title": "Peter Thiel slams ‘not very smart’ White House officials, warns of dem socialist takeover - New York Post",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaWkyVy1LWlBSN2xndkhILVgtcVd5Q0JfaEM4WS1tVU15NlpGMkptZXVDS09SQkpjU0JIWndvTkhDV1FkRVJtVVR3Y3BBcXI4MnUzQ3h5dGdXXzhxa0UtYXlTMVFBVlJDeUR0UzhFNmRRV3otcUl3eFpsRUdxSGhOMjBKQ3BxVzBKWkxqZG1CS1plaWl6ZC1VcG1xVC1NWTJpTUM2NXJXanJPdw?oc=5": {
+  "title": "Peter Thiel: Palantir Sales to US Corporations Accelerated 'Tremendously' As Europe Falls Behind in AI - Benzinga",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUkJHQ3ZWWDFIOHhLaXMzc3ktQXEtUDlqdExmU0NhS0ljQzhaZG9FQzdKMXkxd2planp1djBlVTFucGdhRlk1Rm44TEF6TFpLeUF0ZFM3eVFyWFl2b1laRlpwNmlnVjZ0SE5mTWlQcldUOUQtbzhkM2pUYmhRdnBrWm1TOXRUV29hbXdR?oc=5": {
+  "title": "Pope was a ‘useful idiot for China’ when he attacked AI, says Peter Thiel - The Telegraph",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUnZtYVRtYkNTNTR3eWhsako0bjRzSkVWa1Q2Y0tHQ0YxN1ZFMFVORWFqRVFtSnNXemUzT2k4RmJodVRYZGlQeWQ0djNNbDItd1VPTDIzY19pUnVpaVNqUmRfcXV4QzJ6b2hHVlFmTEZmQzZJaTBMcjFhaEtTUTdMdDZZOE44SXoxd2c2M21OSlAyRUhZdHN4UW90N19mUVFBaWtv?oc=5": {
+  "title": "Peter Thiel predicts AI will create fewer monopolies than internet - The Times",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVE9CRXpkYmxWWXkzUjg1ZUktN05SbTd1U0RUaXJ1X0VGeVdiUXF6S3Q2VDRfTGozb1h5dTVBa2xOVEI3LS1RWW5IYnRqZVdsQ0pXVXA0ZmFLSUd3Y1UtSExJLVBUR3EwMlZjWnYzYTdPemdDeFV6MDhOQUdwRXZyRFJIS1dScXZQbFFVLW1qdUR6MGlkVEI4MmFfVm53dmEteHVjSUtZU1U?oc=5": {
+  "title": "Peter Thiel: AI is bigger than the internet — but Europe is falling behind - Dealroom.co",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNXN4TzVBWFRxRW1JRmZvTGY3THdEMFJFa0gyNmJlSDRqS3I1WGVOdU5jTXB2R0lyM0MxX2hsVjZkYjNMLVlueGdFSVE0ZDIyYjRRbzBrenlEWHpOcFhpTm1KMlVyQ3N3Z2hZdWV4U3RRRldOWmQxNUpLY3dyT01fTlhpMWVQaGFKUDgtT3BGWHFFa1dtZ3F6RzZTdzY?oc=5": {
+  "title": "A Critique of Demis Hassabis on AI and Creativity in Visual Art - The Times of Israel",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rSTlQeFNUM2lsbjRlWnNNejhsV0NQWE14R0c4dXJqWkxvOWVxQ1djVHpsM2UwNWJtTHlvVFJ5MXIwSll0U2hRLUJuSVNfUzQyQlVYVVJEMS02cFpfTFlySFBzLTg1ZUVT?oc=5": {
+  "title": "Google DeepMind Loses Four Founding-Era Leaders In A Single Day - Yellow.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVzJyZ3VBaVdyQW10MFhmemdqd0x6akdvdUlHU2tYbXU3aURfUjB6Nlo3UGRIWmJySTZnVVM1Rm1GeFUzdWJnd1BLNVR0RHBBd2EyOUJSYVlwSGlKcWhDY3E2Z01HeTJCdGhvWUltMzVFNFhGaGFQWFpvU21tRGpwM29Obw?oc=5": {
+  "title": "When Machines Can Do Everything, What Is Left for Humans? - tspasemiconductor.substack.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdjYzcDNRNXRlN05IRVpfcmpSZ1BuUnM0YUFobGNONmE1bnhKZE5JZm5MZ3kyaGxnaDVmUlRhenF2RmhFb3RrM2J6MHJaQ1VyV01Od2p1cWQyRnBnSXY3RjRfTFVvVjZsc21UaWNTNnFEYmdhanNObTQxaFRXQ0tLdTU2aG5PazNlNGJPeXVPckJWUGp0MjMta29pZEhCSHZuZExxLUVsZw?oc=5": {
+  "title": "The Group Chat Where World Leaders Are Racing to Create AI Controls - wsj.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWGtIc1BvVnNvejNEcDlpcGFBUmtZRjdtQ1JXcjVSTkItaHBSRnNuQnFvY0x4X0NQbU11X05yV2d5VkcyNDRvV2dqb3JVbmFxM0pYcVlSQVlaME5uU3c5RXhZcHZTcGg4WFFKaFozRVVyQUVjTmFiaW9zekJuTWVjQUtrMzltaHlJcXdmNy12UFpxWVdScjEyVEJ0WUFEUE5s?oc=5": {
+  "title": "Google DeepMind’s New Chief Signals Gemini 4 Launch Is Close - Northeast Times",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMinAFBVV95cUxONzhLWjZ0MG9hYU5GbGdtTldyaUQ3Wnhrc1ZLRnRyM3p1VHJJYnpFaExueTcwTzVUaDlvaTJMV0llRjZYUjVmN2lzRHZGV0liQkJEMm5zVWpUVE5XeHFCQlRDRFg2eGZDUFZJempjblVLZDk0UmhyR2FmYUtFYmNaTlRkUTAzUzNKOGxNUTNCdUowQUVkbk11eDNMUnE?oc=5": {
+  "title": "Google DeepMind Exodus Sparks VC Frenzy for AI’s Next Big Thing - Yahoo Finance",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTVFDMjRoZm1iZG9ZNmxhdWh5YnZtaWtIMlphUjZkcHVPTDQ3NTY5VkF0SkdaZWRYakxVMnRudlRoVW1BbmNhbEEwdzZhMGFKcUhZdTR2ZncxamJNWjN2Mlk3bTEzbzc0RlppNmEtRXRwdE5xTmFPVlZrMTF5MG56emxEYkxvNmg1aUVFU3JDRzkxbDlMVU5NVGctM0RVX3VaVXI3THY3VERNSmppQ0t4VmN2TnlEci1qeFBWSUlTeEc?oc=5": {
+  "title": "‘Our industry sees the risks and is concerned’: European tech leaders join calls for AI slowdown - Fortune",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTEZXazc2SGtVdWVzaFoxTG15WlVCOXI5X19MLVpmUWFNYllmU1FYcGdZZDd0TGtOQk0wdDZiZ3dBeW43UF9adjhVVTNkVDdfR21paVRRUzh4V014aEZDbXp3cW1vVWtHQzlPMXhqSGUxcGNkLVJSNmVEcWlHd2otZHJocTdBSTcxR3pEcV9mQUdSSUpGSm5Dc1RMRzc?oc=5": {
+  "title": "Google plans Gemini 4 release before year-end - Computerworld",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUjZCTllMVGVVNV9BUlE1UGtBeWNKOEpsckJTVjZLR2Nza0JKaVZCZG14UHpNZjF1ZkJ5cDBWUmdmQTZidTh0X0Zzcnc2cG91dUZraVQ2WDdFZzZxSHdTWF9sWlNQV0FmNUs4aC13TmtmSk8yOHVUeXdLcmoxQTN3eENqaW9uaVdITmVIVmY0dWU2eGZtOEE?oc=5": {
+  "title": "California orders review of AI ‘kill switch’, safety controls - mronline.org",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMUFPV0FuNDNVVXlScUd6bFZSeV96NXloTWtHcWZhX2YxYklhNWM5dEd3N0ZVakV3ZWxROGk3WlJpTV9hWFQzZzBMaVptajBZV3B1UmdobWxZNXlmRDlmTDVwbFBnQ0Q3cmdtQURMTGwzd0hvSHJ6TzdySXNLQ2t6WFZxeVg1d3pWTloxMmMzbDhJZjZsWUhSMk5BdXdqMURELWVRN0Vudy14ZDQ?oc=5": {
+  "title": "Deepmind was built to chase AGI, but its new chief just wants Gemini 4 out the door - the-decoder.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQ1BMckphRmdCWnl1cWFtMDZuR0hoVEZXMkdDZ2pHVEpqWF9uOGg3Qmc2QWFEZG1zNFRaaTBScXA3TU5EdGwxTW1NVGJWZXJ6dzA4d3MxN0Vra1pTYWV5LUVpUzd2ZmJZdUptZjZvVlJhczhsU3lLWFVMdWJSWmZYbHRWSTZfQQ?oc=5": {
+  "title": "Opinion | Jensen Huang Thinks A.I. Alarmism Has Gone Too Far - The New York Times",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONll6eTNNbTFvX0dNLXREWXJkdjZUTHB3V1o3V0pZQW1LTERQUWdKYmsxYmpvajVleF9MQXZUOVRBLUFDOGJIcnZWRHpMdjdWdTZzdUJ0NFJjN0dINjFlN1JjcUNfTm9TSEJmcDJ0cGhjRDdhZ21lazdKODRKWWktUE5zSnJOVnFXWUl5TU1VaUdUVkNVSGlxYkYxSVlmVGc0ZU1SdS1jTlJoYVB1cVZhQWxGYThzUHZw0gG-AUFVX3lxTE5CTHc3ZHl6QUxWaF9QWGl6NktSeWdCNXBXLXNFWllKTXFyc1VXZE9KOUNlWGU4UUNJclFWNXZVUjYzMU9ZbUlLZk9RT1NISldnS21ER2gtZmZ1MDdYd3NHbG43ZEZ5RG4ydzY0a0JTVU5lNXFXNVRpa2xFejdFZ04zMVkzMy1XbUVudDJ4cnBXQ2lzTjM0MWdfazYtTVBRMEhDSFo3V05aX21UME8wWTc0ci1TdlVKT0FpSy1jSXc?oc=5": {
+  "title": "CNBC Excerpts: Nvidia Founder & CEO Jensen Huang Speaks with CNBC’s “Squawk Box” Today - CNBC",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMHd0WE4yUXBWem9UU0l5UHcxbnpIamt3LURzSmRLY3FoR2R4Y3hlNHFUa1RhMXFjMTlydFBmRGVVQmNoYjdvT1V0N3I4Rk5INjB6RnkycDhEV1RBNGI1YVlLcXZyUUxGdGZzeTFpejNtODZXY2pJS3hVdmZHSHphcFhOZ3VTUVRldDJRUE5yYTZLRUhWT0hVZWRHTlR4TU5CRlpOX1JHZlZPVGZwVnZpTGFLY1ExWXdJb0lUU3hGSQ?oc=5": {
+  "title": "Understanding Jensen Huang’s AI optimism and how it influences President Trump - NPR",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMidEFVX3lxTE1YT09OdzFrTlZyZDNjTHgyR2JHN2RpN1V4T3pLMUVrQU9xSnVCSXJVRy1uNGpkbm90ZG9rVXFfamtPMUNIZUN6UEI5R1B2QWFUc3ZZOUlKRUp5WkVsQ0dYMERLdnFPdk1iSzB2TlBkTVlNcHZF?oc=5": {
+  "title": "“I think the answer is we have to shut the labs down” - Jensen Huang - Marcus on AI",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiowJBVV95cUxNVm45RmxOUWFxaERxbjIyRWd5eWtVWExVaHZoR2lhVmo4ZU1XS01ZRjdCU2lOS1FiYmFwZjBDcVRxN1ZLM2xQbVFHd25CMW1oRGxDRFlZVGRKak5SQm5mcTQzc0wyVWxKeGtWcDYzS0RlY2szR1ZTWUswbXpTQnBfQTB2QkZpa0hqYjZuejJCcS0zQ0dWakdsalZZNndneXUxd1o0VWpPMkFpNmwzNnRXTzF4SloxRkxMMzFra21RdW1yZlVneEFzeVdNb1V5Q1U5T1ZoYVRuQ0NidHp0Z1ZyNTRWSDRZY20xM0NZZk9reEFkMTVjUVhHNWw4WFFhLVhEb0kxek4wY0FrRFhrWmtHNHowT200QTFUZ2UzRHUtSkVrT2c?oc=5": {
+  "title": "8 wild quotes from Nvidia CEO Jensen Huang's latest interview on AI and why they should concern you - TechRadar",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMieEFVX3lxTE1DYnVibjZ6RnBuU1A2LVFrMlQtRXZlbWV2WGJ6TkdyYVoyVEFqVS1tLWlVUjdrQ0R0X1FhdUVTOXgtSDhpY3o5N1BqeEs2bkUySjJxUE4tZ1lwM3dncDI0UGQ3UmdjblZib0V2dTlCU2U4SnVNUlVTNg?oc=5": {
+  "title": "'Don't ship the product': Jensen Huang on out-of-control AI - The Next Web",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYkRfdGVvZzNROGxZeEd5dFQ5RV94YktETmZzRmNkekFLdkluYkVFNTVXSEI5RGtzOXNDa2FTWGN1RE5ZTEIta18tSWNWSUFCT0JNeXMyREZuNFFidlpPOEoyYjhMUUZlMC1odGpNcEdnR2tCdmZBRldqSnljTjNPLUVQOFBSWVkyS3Rsdzh2LWNvWGVoSkpTbUp6YUlLWFVRU1RkQ1hDMGtwUGVjN2ctUm9xWW9iNHNVSjE0?oc=5": {
+  "title": "AI firms should not get regulatory waivers, Nvidia CEO says on podcast - Reuters",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMimwFBVV95cUxQNlNmM2R3THNqdE1USVJBY21wNDRBdTJCdngxazd2bXhXSVdjWmFWYTAzWllMcWNPVll1UzFSdU5reUJqYXUxRWJkTU05OXI4T3BDcFZybzlvLUp5R3czZXBMRlpKdlZJeVF6RUs5aFhSSmlLZ1JCUXVXLTZ5NndIUmc2OFRpUlo4MmZqSWtHQVFQanh6a3EwOUJiVQ?oc=5": {
+  "title": "Jensen Huang talks about AI and climate change like a supervillain - The Verge",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTmstTWdGcXA1allfYlp1UDB6Z3hfeEpIY0NWS18xaHFmU1VlQThnclBpbzFBTjI1ei1KNFZrcWYtNlAwRll3R0QxMk0wN2xibGdTcFpQWW1wem5qcHZHUmc5clZ5OXQzVS1VcW4zeXpwc0toSmtKRTd0eHRtcjVUZm1Gd2psNnJmR1FRMHRBc24zSW9Q?oc=5": {
+  "title": "Nvidia CEO Jensen Huang Says That Sacrificing Our Children's Minds to AI Is a Price He's Willing to Pay - Futurism",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZ1hRVkZfUmR5N0J4d04zd0lpZGdtalBZaG8wbS05M25tcUkwZWpyQ19ENlZaTlEzWmxXTVhsYVM2d3RlVDllb01KT2dRUWFWVnQtR2U2MkxuYmU2WEk4ZkJRMG1HY2hVQUd4QVB6TkE5cDZlLVA5aTd1bGc1QmVhV2lpRGUyaDNyWmMyUUdPRFA1MEpsWHJ5bzBkbENuMmRXSDEwV04wZFVBOXlJWHBqT0NmTVg1VWVRYVA5MXFCd3dYbmc?oc=5": {
+  "title": "Nvidia CEO Jensen Huang Show Leaders How To Listen Before They Persuade - Forbes",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTHNHRnhfX3RrU2dLVDdyVlIyUFJyazFuejlQYTg1QjZsUzVDLWEyRmlmeXh6N0d1MC1jbVVpMFJwTjN5bXdQaGlHTnJneGh6d1Bnbm5QblZXM0ZRM0hMaDVFSks5T25jQjVIbmZqN0VJd3lYNENXLXRucUtSblRDQVBuY3ZOMEVJZGJMWGR1MHJIS3RCc0tLNnE2cEdZR241NXJYLXQwb0FGSWlQMU1jUDZrVURadlk?oc=5": {
+  "title": "Mark Zuckerberg on Meta’s new audio glasses, Muse and if AI will kill us all - NBC News",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYXJIYmp2a2lHYmlqZFFjMWF4bXFOYTRXMTlJaExLQVhXbGlsd085YVNnZmF0REliLW9XS2QtQmhXNjZPNHZpWHFMTzhqd3lQckZ5bnF0cGFPeUJlNjJQTndRblJyQ1gwVnYyYlVyaWpmNEhoNUU1YzNTMlVsbmFVRHZIVDNPaDFaS3prRTN3dnRKMmpKTGpUamgycW8xX3lEd2lGSXdmWWl6QUFDUlE?oc=5": {
+  "title": "What Mark Zuckerberg needs to answer about Meta Glasses, Muse, and teen safety - The Verge",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRVd2NzVjTEVRaGo4d2NVYVlfbnZxeERpUUZrUV9QMk11U1VxZGtoQ3E0MW41UFhVSDk5MDJUNE42THFyZExhcW00bFZNVUY3TlJIc0l4bEVnd25OaXJIWnpnd1Z6R2xvb295QXRiZkRZYmJURDdVb3lWWFZMcHZFZ3JuUl9TQjFHM2fSAY8BQVVfeXFMT2VtcmtQcGRSR3ZkSWl2aHl0TkcxMl9ERXJ0R3ZUaDNxTVZ3UEduaXNJeXMxcUdSVUZVcVhjVWdZOFh6S3F3ckVKaWlRWEhiTWtRdnRsaUVqVVprQlBOc0Q0eFZmc0lLbjJybTRwdmF0RWJyR0piVUhxcmQxd1BsTTdUTkpaZGlBU29IUG5yRjA?oc=5": {
+  "title": "Fake Mark Zuckerberg makes amazing case for free speech on Facebook - The Hill",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWmduYUVNaV9YdzRJNTFyMDFzUkRyUWY4OEpRMzF6X2N0c2p4R01lRy1BaWQzQ28tUGxpdjM1MXJWa2pTbDhzeGxWekRzYXlEMDVVVWZ3eEFHNDItS2M4U0lwMnM0dTZmLXVwOXJtMWVLc1B1M0FNZkh4VFdpZjZaVw?oc=5": {
+  "title": "Meta Connect 2026: How to watch the keynote live - Mashable",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMirwFBVV95cUxOYTRVQnhHbUtNYzNLUGxlVGxLOXVVM2ZZVlRncDZMcVoxUmNqOGNiWFIzb21pOFJuODY0LWNwZWJ4NkJYTmdTWU9SUkpBLUU3OXJQZmlGVlJMRzduZmR1bHBWc3FuV05ldm5SekozZnJsZ0NaSDNlTHNMRVY0TEVPUzdLeW0wdDVQZTd5LXhtSWh6Z1VTUnFhUXpvQUx4LWFPZ0xfaVpxYWdyNUhJeERF?oc=5": {
+  "title": "Mark Zuckerberg Showcases Muse AI Agent Fused With Smartglasses - wsj.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMzAwVzFnYkd5WkdTaXcxbHNuaWRvSUdIR1ZJT2RSY1RJdTc3eWJJQ0owaHZzR0lvZjNRdjNPUUhHZ25YbDdFSE9NaFkxd0ltdzNOc1ZWR1F4bm9Nb3gzaW5jT0hhNHJMX19FN0V0aVBNTC0zWXJhbWh0WjNseC1DRldEcko2QzdJOFF6SnF5TzdqMUl1aFhLLWhoQkQzM3ZIUVphbV95ZG9lWm5TVi04ZllR?oc=5": {
+  "title": "Mark Zuckerberg rejects calls for industrywide AI slowdown - NBC News",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMigwFBVV95cUxOOUJZb1RWSlV6UTdiWkplNjNzR0NxLUVKd3FlS2ZHaEJWOEFGTGprMlVTSm0wOFR3VWFNVW9uQkdiOXQ0Mk43TzNGMnpHUFdrWDBuYk9rVmVkZUtNOEk1SjJnd2RpRGpuanh2cll1aHJCeFVkRVFVSnZURnhkLWs3M3pUdw?oc=5": {
+  "title": "Why Does The Times Care About Mark Zuckerberg’s Style? - The New York Times",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPYVF5SkxmdnBGWWpfN0NQakR2Y1J6Q1BOX3ZJUVVFWmNJazlLT2JaQVlDS1dqWU8yTlhsZGVLaWxOVXFQR0VrS1c4VVQ0ckdfV0hFLWpJZkZkNGZEV2JjdTRQbUpVNzE5QnlrQlZhSUV0b1UxaEkxLWRtbE9CcWtBWkdaNmhIaktLY3ZETHItTTM0TzhnNjhEZWlIY2d5VWxHRUV3aDdZY0JSY3ZpYUNmVzBXUVhTSThoMXQ2OWFBRTVFVzFrQnZmTThaMUMydGNmMVdZ?oc=5": {
+  "title": "As Meta pushes into fashion industry, Mark Zuckerberg talked about his and his company's style evolution for the first time. Read the exclusive interview here. https://nyti.ms/3T74lGt - facebook.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMifkFVX3lxTE9sMENRczdndThGR2lydzBwRjFyRlBLTmRkQ18xeU5OWHJ2R1JvZFZKTGdWTl80RkZkNEFVS0hyT0lzWjZOdnYxWFVLaGVLeGNKSi1YUlpYcm5neHpRRllCWlppOHNzMklYRTlBVFNBN2RfcWJGNmZQY1EtRnpZUQ?oc=5": {
+  "title": "Mark Zuckerberg Brushes Off Meta ‘Pervert Glasses’ Uproar - New York Magazine",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdGoxYnlWel8zeXBRUV9MSlZ5Y0hkMUR4N0xmcWVkR1dVSjFmOXBHaEJnTjlZNW5CYlVqNmpKRFZrSWNzWi0tSV9iRzd5NDR4Mjk0SnlFdTNEY2NRcmZxVGZzbjVtT3ZRcmZPMlRZQV9CNGFiYngwbld4OV9mUDN3eTJDN3pjaUppQVN3ajhBc0JZdm92SWZZOHpnblhmWjVKc1Fr?oc=5": {
+  "title": "Mark Zuckerberg says Meta was working on camera-free Ray-Bans before 'pervert glasses' backlash - Business Insider",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMibkFVX3lxTE4wXy13RXFqWGRpRk9BS29ZUWhkcVoydjIxcUlQcF96dC1zVTkxdVB5OFQyLXFaU2NZU3QwWl80MUhRcEFpbllMaWNZTEREX1Y5WFF4aUVOVVdGdC1Xc05wN2g1RFltZEJPZ19waENB?oc=5": {
+  "title": "Satya Nadella on Microsoft's agent bet and AI’s trust problem - Sources | Alex Heath",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMixAFBVV95cUxQa2toU1JVa1AzdHdWNzQ3RGxuMk5QVTliZW5xNkhYSjB2OXpvRnZOanRZdmNBSm5UdkduQmtpRGpyMkFhMHBCaVdTQVA4bmc0NHN1WVJhdEJZYTNXdHRkTlcwZnlkQkc1czgtT1JxNEZHNk04Nmotb0I4NGNYTUlqaWVMM29zSW91clMyaWxHU3dfMmY3aDBRazRrbERHbmZQLWVtNWtYWGNDVEVKalAzanFiZlkxWEpuV3NHZXNlQnRSOTBO?oc=5": {
+  "title": "The 8:30: Trump-Xi summit takeaways, an interview with Microsoft CEO Satya Nadella - Yahoo Finance",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPLUZPc1g4RlIwcTN4dExhQkNWWE5TNnhmel9DbzhWUkhjRU91S1cwR2k3UUc1Q3RqOFdDZTRtZ2ZyYU5RMTVOMVpwR181SHdrNVA1eHBpZ3NoT3E0Q1ZBaGNBVC1KSkFIWXh0OUpaT3BXSkRnWGd6cENCSUJ1dE0yMERhS1ZVZDRkQTBmczFnUDdoT3RjZ1E2SXFnc1NXNzltd0o3Wm1hRlBBdw?oc=5": {
+  "title": "Satya Nadella is very pleased with the big reset at XBOX - Instant Gaming News",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPODVydDRPQ0xkWUpKYVJVV3YwMFpaWXY5U1RzSkFMUktnd2dVQjA2WHdaZ3RzUnVHZjBYWWNLRmpBVjY5Y3VSUUZOejFhRzNOXy1hWldOWGFyMGNZTWZQWldrQzNsT0NfSzJ5SXBTbzlHQ3I4NkhXdy1Pb1ppazlBek5rWG0tOTAtR0FHOVY5NmlHVzREVHphQVFBckRtNjNRdXNwckh6RFgtb3RfY0IyYVVFT2liZjNJYmdlSzBYZUk?oc=5": {
+  "title": "Internal memos: Microsoft shakes up communications as Nadella makes a push to build in public - GeekWire",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUlE2RV9PMlVoNWplSGtDU0Z4WXliZWNpSHZ6cHRDOHZ4d2lKOHFTcnRKWmJjYWl4alpEZVhGa016bEdQS09kTXMxNEd5M2x1dW9VSHlIc296SjZxR2F4bHVyNHpCcmZkcXlNMjZPWWxVWS1lREN0MUZjN3c0QWhmd3N6NGRybVhkSzFrSmhsRnNpY1lNdndZTU9FRlNQcVZ6RkhITkJOc0tDaFdMZUF4TDU0YWlhS05CLW0ydFEtMDFFeXBRdGRnWVpWbTdfZW5TeTNoZndn?oc=5": {
+  "title": "Microsoft CEO Satya Nadella on AI: ‘Trust is going to be the biggest issue for us’ - Yahoo Finance",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSEoxajNRd0ZVTHI4emVxMTd2Y2RqZEcyLXJ4LV9BU19Yb3A3QlBTOUJQN1dzY1JQU1dNUVppZjE2WXZmRnVEeGtGSE9LZHRyOG1GSm5kOHNTUXJoNmpHd1paaFBYSXNVTUl0QmpkUmItUS1vWUJJVE9iTlVkb0NRRU9veS04Zmh6WFRtVFdqNUtYbS04RTNaV0NkTFBscGRjY2o4dnkwbDIzMnRic214OUNVYkQ4N2ZDck1xNEMtWkE?oc=5": {
+  "title": "Satya Nadella praises Xbox restructuring, says 'streamlining is great to see' - TweakTown",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZ3g2Ujl2UkJ5NWM0MEtGcUN3cEpCWmVpM1RKN3pkeUwxSUNFU19sRlpvTDJRMDJ4TkFkU0liQzUybUJmWV9wMzBuSXdMZDJqUFhpWHU2aUVwdDNScVRSVGFvb25zR25xbFM4WnZPTFc2V3M3Qm5JdHZXaTFpQXFhNDNTd0pDZ3Itb0RkNDVxNG9GU1R2UDNmX2QtTTE0dnB2dGxFcTUxYlc?oc=5": {
+  "title": "Satya Nadella says Xbox layoffs are \"great to see\", adds why he feels \"fantastic\" - neowin.net",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMickFVX3lxTFB6bmVWQWdlbXFLdk5fbmlpRzlOLXlpQkd4SzJ0WG4tTjJNd1VWakd6VlpEMUdMd0hwNzBLVGRtZVVlekdpd29rVXp6VWI1aENhRnI4TEhZMWZWZVhGTmM0X0ZVMEFpeUlMSjB1UU1vV2RVd9IBd0FVX3lxTFB2MHpPNGxQUDgwVlljbDl1RjhoYldaYTRpQ29pQkMwZzRJM2p4UDR6VmZ0ZGNUVEZHNUZQQ055ck5WNTAtelR6SWtGMnc2U21SRlQ3TDRiNUhwdHdwMkswaWNPOVczaTBVOXkxM1pSQ3pDMW5jT1d3?oc=5": {
+  "title": "Nadella Calls Xbox Layoffs “Great to See” as 268 New Cuts Push Microsoft Closer to its Original 3,200 Headcount Goal - Wccftech",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNdmtIblRGaTVQUkl6WHAzeENUS3dnd1ZPeVF0VHAtNHVkd0pWMk9sV1lYSXhJN1JjRHVTbWMxVGZzTnZFZ25kR3duQmdRcjJVODJMa0xPdlRfQjZMSGlNYk14WHNtUkZreHlVbzdmSkM2M194SHIzZlBkNE5TQmI5Q1l1ZXkyOV9FeGxqRE5NdDZqeU9mTWlqNXJQRnhOdzJKZ0NaSmNYN0dGVE42ZEhtamctRkZNU3dVMUx5ajlTUm8xM3o5eHRKTkpJOVF6YjBWelVN?oc=5": {
+  "title": "Microsoft CEO On Recent Xbox Layoffs: 'There's Some Amount Of Streamlining Asha Is Doing...Which Is Great To See' - Kotaku",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMickFVX3lxTE5pRVZrX0xiTm1CbjQ4aDFFMlRUNF80bFU2WUpJSnpiM2xJQWtKRGZnME1uWDRpZmNFaEhiOVhKUEJ1RmY3Q2kycGxveDc5MDFjRGpVMzNaOWZRM004WmotTnktMGtYZVZkQ1ROdG9uQ1JEZw?oc=5": {
+  "title": "Nadella Calls Xbox’s 268 Layoffs ‘Great to See’ [2026] - shattered.io",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZnI2X0NPd2g4bGx2X1VkSXJfeWZIN3ppUEpqT1ZTWmRJYjVhZE00Sk1EQVdLSkNxZ3VoN1BTaGY4RVhSenpJMlFrSVhtS2V5UDhvZ2VCYXJWd1VDSEc4QzZRc0pUWEdvSzFNRk9vaUVKVklWWGVsYlg5SVp2TzZ6bUh2Nm94RXlUeTdJNVlFcDMyWTdMNDl3Q3R5bDd1YmlxZl9PWA?oc=5": {
+  "title": "What to know about Horowitz Andreessen Academy, Silicon Valley's $42 million AI-era college alternative - Business Insider",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMjVuUm51bm5IMG4wUWFVUDNKaWc5SDRCSzZUXzhOOWVpU3ZUT2tNVWhkQ1NJZ0QxcVBuNDMxQ3FNSXNVNE01WlR5NjFYMGlheDlwLTZTRzdaRnV1Z25kZnlzSXBHRWRpc0tpM2xFSF91b1RsM0pzaGRVRlFKekQzdDV6NmZNUGxtRmxudXdB?oc=5": {
+  "title": "a16z Launches $42M Horowitz Andreessen Academy for Tech Builders - News and Statistics - IndexBox",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcUc3dUtsWWcwa1h5LURnNVgySUl3RjVxb3Q2N0xLS2trOU5pbVZ4cURMWkRBUm00eXUwVFY3Y294REtnWE9NUEtjWlloTk5jZFE3X1NSVHZ0anhzdFNZWVE4c3gzUk1KVlVDNGd2b2FuVXpGRlhhamFPLVh4bXpGbmJVOU5Dcmc?oc=5": {
+  "title": "Andreessen Horowitz Launches An AI-Focused Academy - TheFutureParty",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiU0FVX3lxTE94b3FHNW51LTVWM0pyZFJGQUwwaHpRelB0OHJ5Y3RabElUeDk4RFdPLXVOYTBDby1SZzcyakxpalhrQmRYcjZhcS1BMXZpUURhQ08w?oc=5": {
+  "title": "a16z Bets $42M on a School Instead of College - Wowtale",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5RaHB5SG94bVhJWGZDWFV0RDNtZllidGY4bUI1anNRd2tneHNFZzQ0VG5jM2FnRzRsX255d1l0N0RzYmFhLTlGV0RpQWJqdU42ZFlnbVlRVzBCLU91?oc=5": {
+  "title": "a16z Launches University, Silicon Valley Begins Redefining the \"Good Student\" - 深潮TechFlow",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBiTDFsaWdSX2l1eHdwblA3Z1lBaE0tdFJyektfNXV5TEx5UG55MzZYR01yRGlzRDJndGpMbWhHQW1oQWpEbFgyWVUwT3c1U3JObzZv?oc=5": {
+  "title": "World's Most Powerful AI University Officially Established: Sam Altman Appointed Lecturer, Jensen Huang & Satya Nadella Line Up to Show Support - eu.36kr.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMizwFBVV95cUxQbE8zcHlYdS1fODhtTlNnSl9kQ1pCWTlBYlhwMzRRU2plaVBtYVphUUJSUU9iT05ZaG5MbkZSNHpnNVZIQVZSeXN5eEpXZ2FUM3R3WTdIcGE0Zlp0SC0ybEVfM0t2YVJ1OUlMUnNLcnM2SE1JZmVzblZUU0plak5YdmRfUldTLUtwRFdTVGJtOG5vVHp5dC1SaWpKYmMzcjVOWkJXU05WaXJxcW5OZFhudU90clUza01COEhBU05NenF4ZWdhY2M5cnJTeFJsWWs?oc=5": {
+  "title": "A16z says Revolut can be worth $1trn. Here’s why Ireland is key - Business Post",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQV2UtQTRJaTU4bTFJOHdMOFpXak1JZDQ5MXNlTFItU0lfZzVDUUZBNW5sd3J2XzJfdkV4a1FnRUFNUk1lZW9Dd3pCR3VjSXd6YXJfWnVEUVBPSTNfeW03UmRMR0Z2enRuWjZBVjE1dVc0ZWxETFZWT044ZkRoMFI4VTJ2WGZYNTJPYVVya2F5emo2ZHN1VllxSGc5LUpGYXNzV3JIb3RtUU80VkREd1dGV3NicW1mSU5nUmswQy1UUG05X2NHTVpwT1VIeWFqekViMEZ3UUU3VDk2eHkzWUlZZ3FFSQ?oc=5": {
+  "title": "Jensen Huang, Satya Nadella to teach at New Silicon Valley School that skips college - Education Times",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMidEFVX3lxTFBLeHFGYVNiQ0ZHZ0ViaXU4VTBlWUlPMW1IXzhnQUV5dG04aW82VzlHczc4YTdEMElyVUhYeVQtMDk5UHVPMzNBT2RxZ3ptYmhLamV3Tm5KWDd3dngtWm5CTXFjSHlZMnRPVXBwUGtWVHdMS3Nx?oc=5": {
+  "title": "Coinbase CEO Brian Armstrong: Huge Innovation Space with AI and Crypto, Best Time for Builders Now - ababnews.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA1VzZnbmkyUHFTZF9EeWxBd1hzZUFraE9SeUFZdjRZYTdyOWdvci1UVVJZR1FLNnNBUElEV0JSRFBrQ3JvNDBvX2phOE5FSExMMDZsM2F0SWphVnBQOVh2NElvR3Bjb0pY0gFuQVVfeXFMTmVzN05pTlBKRzdmcVlBQ2JwT0JIcGVIOV9OaWZrMDlva2xFcFk4SzhoTDhCOElXVnNSZzkyNTl0VzFJVUNRYk84clFiNEVDT0ZUTGY0OGxVcUxta24zNFRFRVZOdG1HMUk5WXFmZlE?oc=5": {
+  "title": "New AI-powered government website uses Gemini, Grok, Trump official Gebbia says - CNBC",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQ19vQXp6TWF6VFpOeHZPTWdKVV8yMnNadlhrczcwZXdva2JBX01MOWY2M3hmbDR4UVRnbGJVWWFVcFQwZlNHeXlSZ2dMTV9vbmh2TUZVMHNCdnBmZTlTM1ZqeHJ1a2dqMzIxWGZGQVhyUmNGcXA3aTZxVjBwRkdseFBjakE1aWRjYTlTZmEzWVk2bHBFbXNXT3ZmUzI0NHU5ZEdNbjZB?oc=5": {
+  "title": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch - TechCrunch",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbEdJTmctN2Nyc0dlaElkN2tvbVRhT1VBeVJjVFVnRGRheVkwQlVzVjQ3QTRBZFJMbGpMcC1YRWgzMnlSUEdHUjM1OVZOSEVLSl9RYnVoVUlkYjZoWXlZV3Y5WHVsQUU0UG9EZzFIODFDX0dwdVpRSHZyVUp4YXVhMURBRWpUc0RuX056MzV5bWVnc1FzbDRDS0pKaWh5dGdtOFBrOGVFTmI2bVZGYXdITjk3NXlFQ0hJeVU3Y9IBwgFBVV95cUxQUkZ1SGYwUktTaUQ1U3FBRW9LNFpnMjM3YkhLMF82cUY2LXZQY3Q5TWUySFZ1YkhxRG1aanplYjNfMXU0YmpOYnRLejM1UmJEX2hpVlFCbmQybDNjZVBtOHl4MHNrRWpPOE91dlg2S1RIVkctaU11NzRkYUZZSmVqeHVNcG5lRXphNkhBUkZ4b01sQTJ1QmFkcWY3SVpFLVlUdWRvSk1Cemk4bFF5STZPYjZxYmo2MEVQVzJNWGdfWGJtZw?oc=5": {
+  "title": "Elon Musk admits Grok trails Anthropic by years, yet claims his agentic AI is exploding 100% monthly - Wccftech",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUzRMYUNFVFRYTVBBVnY1a2lFeDBoV3RDOUJJd1FxR0gzdDhUSmVTQkdqZEIwbjZmQllqbHlfTmlYMlpwXy1HRXh6aDBsU0NrZjVTN21oZ01BWjBsNFFBNmk5eTdIMEMyQldUbnlHRFZYV2VhVEl1NG5sTW14X012aEhDQVZRRFRXamNka1dTRm9lbFFpcDExdUphWQ?oc=5": {
+  "title": "Musk's xAI Snatches dot.com Domain Before OpenAI's Dots Launch - The Tech Buzz",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMic0FVX3lxTE9vVk5tLWZRdVZMRjRyT2U1eVhBQXFOOTd0NnMtMlFPSy02UE1OLXRkRXd4Y05YOFJOUG55dDg5UEwzQU82Ynp2QTFkRDhiMjdtanhRR3RIbE1YWXY4bDlPVTBuQ01yZ2dUM2UtZ1d5akNTS3M?oc=5": {
+  "title": "Grok 4.7, Explained in 5 Points - BASENOR",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5jTktJM0ktc2VZSHBCWU5BZkNQTUtwYXk0YTRseEh5c3hCMVBIWEV4aU04Qm5tUWtCQWlrXzk4YUpVNHNEeEVsNUFxX2pRdUp1VnVoVkg4TV9mWDFtUXZUU3I1LU1uMU1f?oc=5": {
+  "title": "Elon Musk’s AI Grok Bot can now handle banking while your Tesla FSD handles the road - Teslarati",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiekFVX3lxTE50NnNVcW5aUEhUaE4xX0UtRUxfb0d4SEJSWnNpci1yeENMQ0NLNDByRzRjczlHYTJ5Q0pfQmVjQXAyODRicFVzTjB5S1pCR19xSnEyWXBRYkNpMG9UTFk2YXlmREx2TlBKejJiOTA1TDV0ei1sQmUtUy1n?oc=5": {
+  "title": "Elon Musk's xAI appears to troll OpenAI by redi... - Pluang",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQ3B0Xzd0UlZaRHM4RTFaS211VjdxZWtfd2lRaEtQUDIzTGRaMXd1UkJQcHZzUHdjLV9Yd1NMLWh5Z3MzbVJEZVY0ZWtuNV8xMDQzQUpWZWtvdTNIU1U1aVNMNXBSN3JvQkhfcm9MSmNWNnVNTVJMYXk1RjhUa2dZdVNHWk5UQzczZlRTaFNxTGp3NWVJeVB3X0szUHNZdnVnR0RNc25ndjV4elpuMkZoVC1fWndnMVFaWFE?oc=5": {
+  "title": "Grok Puts the AI Assistant Between Consumers and Their Banks - PYMNTS.com",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMif0FVX3lxTFBPZkpzVVJDS0o2QmRhNW54S3cwUkJabFRjOE13TklLaUFsZFBITDFLMzRzaEh1Qmhnd3YzYTBHd0hEM0lyVHlVU2ZsNzJQT1RMOG1EcV9CS25yWFQwVlNSNk9STVhxcG0ydzlKenZkeWV1eFNvQjdZQTRDdUp2dEU?oc=5": {
+  "title": "Google is launching an AI data center into space on Oct. 1 - Mashable",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMifkFVX3lxTFBtZk1qT2dlV2Jra1BBdlZ2dUpqY19mbmt5YUxUWlNoOFZVU0JXaVhlcF9VWklHSjN2NDBJdVFwRkFuQ3k1YWk2NDR1SUhCem52cUUtVGtUUXlYTjNFOHRoT3FyQmYzMk5ZMjJROW9TVEFCMUI5NUdTbWd4cjg2Zw?oc=5": {
+  "title": "Transcript: CMG Interview with Tesla CEO Elon Musk - The Singju Post",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVjVNQzhxZGNwY1gzVWVTOWtJelM2UkVGaTFIOExRWURWNzQyYWNDNHFKSjFEZ2drQzNfbUw5dE80Tnowb1VOR05XalNHNW9xZUV2WnZzQXZOc1VyOEVzeURfMDRrNFBCcHRnM1gyVWxYYWo0TzB6Z3ktQWphaGt3MGMzaXktUGJETENqemFfOVVJNDlsZjJsNC1lNmdDbFQtS2xWZlFtbUVROEZsU2VB?oc=5": {
+  "title": "Autoresearch tripled our model speed, Morph says - StartupHub.ai",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiWEFVX3lxTE84OHV5UXlHQmFLVkJxcUFkczl0aGhOSU8wZ2Q0Z0Q1c1ZqSlZ2MVJIOVh6R2xUQ3g5a2ZJajduUDBMaXBKN0cyOHhfdG5mUk9RRU9EbFFZRW8?oc=5": {
+  "title": "Singapore's AutoTrust Posts Top Marks on Public Tests of Recursive Self-Improving AI With a Sliver of Rivals' Funding - Taiwan News",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiowFBVV95cUxPN2otSzJibklYcXU4U1JjZktJeWV6STlXVjNVOTJ2VnJaS1l3ZXFyelJaZnZjOEpqZlVKaGdvR29YRThLSl9fWnlPM3BEdm5rMGZ2YW9GYk91eGZZREYxWG5jc18yY3d3U2Z6bVJLcmgwakR4R0NKOFE0QWtGci1RZFdrRmI1MmF4UU1aazRkYWJuY0t5QVpscFA2VnE3eDZoUFVB?oc=5": {
+  "title": "Agents beat humans on speedruns, still can't invent - StartupHub.ai",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMingFBVV95cUxNQ3p0VEFfQlFVcGJ1SHVBdEt2Q0dMSGhtaEpEQ2R5ODU1VHZabTBwdWpmVEhaWVJySVdnRDZXcWVNS1ZwTi1FWHNkVGxjV0xEVWxEQVc4UmFsUGRVTUZYS05VRkN6V2JWR2xQa05Tc0xBTWtZWnhiekxreWdsc1lZRUpqVVFjMmlvdjFkYllpWTFjRXFNZnZCVHUxTW5VZw?oc=5": {
+  "title": "AstroForge lets its Solo AI take full control of a 2027 space mission - Startup Fortune",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMipgFBVV95cUxOei1oVDFuSEFuaGZuV05pdUx2OWJ2NTdSMF9wcWxLYUlqY0Z1YkJXS05EQmY0ODZERTBDdTJZZU5HZkxZcXFLVER0WU9RU0pUYlJHZkQ4UlB0LVA5dmJOdllHNTJjMi1xYUNscFR6OFBCS2tSV2dGM0dkaFh2OWIzRmxMelltQ0JHalBVYTdsaWpmWXZWQ0RCNElqNWR1LWR6VUdIMUpB?oc=5": {
+  "title": "Ex-Anthropic founders' Mirendil eyes $5B valuation months after $1B seed - Dealroom.co",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZGVzcjltRmZrcWF3OGxKbmdoMjNCVE40V3JBZm1Oc2xIYmdPeG9Sa3JvTG80bUJsSlJrMjByVWd5M19EWC1DYU9Qby1jeDBabXoxZXZyWEJ2ZnZuSTBLcG5KZUp5TGRLbkhvYVdtMXV6RlVQdXVOZUNrTEd3NG5GOEptcWs3WjYyMVNHVXBYMUZEWTRpNXl6czhiVkZrYnRuX2pkZ0lOM1VHQTA?oc=5": {
+  "title": "Andrew Garfield plays Sam Altman in teaser for Luca Guadagnino’s ‘Artificial’ - KPUA",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiugJBVV95cUxPcFRUOThKbXd5bUE2b0xGYnc1aXlHd1RGaW1PU0NaX3YwUWo4X1RUcEE4MDh6UzQ2aVNNamNRVWdTVDhkckpTWXQ2dGl0UlVIY0NBTFhUWDN4cmdqUEN5eWUyZGpUeVFTaWEzeUYwYVdOSjF3ZGpGUGdnV3dBd0k0bmtWLXVSbGxEcTFycnYtLWNobjhwTGtSZGhHbHdObURiSTNlaEJKRkIyWHN3ZnZFM2paUHV1dlZEVFVEVHZLVHJiZTFaTkhqRkdqMGRnU2pmREhNejNueG9qaUh2UFpHdmpqT0Z1VXhYNlhWSm8tZFZqTjJBa3Q3X3kyYS1uUnc2cTQzNDAwUF8wZHhiWTZMbDY5c1RPbTFfTkhmYy12cGE1cG0xek5MZm5laktiWlZJZVF0clJzdHcyQdIBvwJBVV95cUxPdF9MNDN3NkU1TThxUk1lUkRGMWk3SmpkOEJBa01KNEl1a1R1TFRBRmNLQXY2S3g1S3VxME52XzlENEd3LWRmT3FMeGZ0OVZGNUNfUEtmWEhpZnp3aDN2MzkyRllDZW9wbkNLNncxdjZYdlhJZGYxZTRycW4zMFZhV1owYmszb212d0UySlloZUNKZWxJTDNVSTdXZ3pFTmM2MlJjak5na21IZ0oyNkx4YTJXU3FkNVNYX3J4TmdlZXQzZlJ0NUwyUko0SzlsQmJxbHZOMkZ3Z3EwT1dvY1ZDNEd4b2x0RjV4S3I2T2JESWxnajNvWXlvMHhRSmpoUW9HdWJHOGkwLVNuTm44N295amNBZy1BSmhTUEtGeTRKVTlsMXdUVUhYTDRwTVVJNUVBbkNUcHptTUxfYy1aNDlz?oc=5": {
+  "title": "Nvidia CEO Jensen Huang on AI doomsday warnings from Dario Amodei, Sam Altman and others: Don’t think for - The Times of India",
+  "date": "2026-09-30"
+ },
+ "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9XSzJ1cG1Ta05nZHkzbHl5WWRKZ1lpMHFid0RKeE80RmVlUFluLThDbjNucVRvdGxqLUV1MzJvaDlFczliYVp3VGdfa0l3VHZCblFFTGJQYkJnTHlXa3kzcQ?oc=5": {
+  "title": "Trump rebrands AI as 'Super Intelligence' - adaderana.lk",
+  "date": "2026-09-30"
+ }
+}

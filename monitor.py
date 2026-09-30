@@ -230,37 +230,91 @@ def fetch_news():
     return items
 
 
-def llm_summarize(person, items):
-    """调用 OpenAI 兼容接口生成摘要。未配置 key 返回 None；调用失败返回 {}（降级为原文简介）。"""
+def llm_weekly_report(by_person, today):
+    """调用 OpenAI 兼容接口生成整周选题周报（WorkBuddy 版式）。
+
+    返回 Markdown 字符串；未配置 key 返回 None；调用失败返回 ""（外层降级为简版）。
+    """
     key = os.environ.get("LLM_API_KEY", "").strip()
     if not key:
         return None
     base = os.environ.get("LLM_BASE_URL", "https://api.openai.com/v1").rstrip("/")
     model = os.environ.get("LLM_MODEL", "gpt-4o-mini")
-    payload_items = [{"标题": it["title"], "来源": it["source"],
-                      "简介": it["snippet"][:300]} for it in items]
-    prompt = (
-        f"以下是过去一周关于 {person} 的公开动态线索（标题+简介）。"
-        "请为每条输出一句话中文摘要（客观、不夸大）和一个公众号选题角度（注明适合深度长文还是短讯快评）。"
-        "严格返回 JSON 对象，格式：{\"results\": [{\"标题\": <原文标题>, \"摘要\": ..., \"选题角度\": ...}]}。"
-        f"共 {len(payload_items)} 条：\n" + json.dumps(payload_items, ensure_ascii=False)
-    )
+
+    payload = {p: [{"标题": it["title"], "来源": it["source"], "日期": it["date"],
+                    "简介": it["snippet"], "链接": it["url"]} for it in items]
+               for p, items in by_person.items() if items}
+
+    prompt = f"""你是资深科技公众号「AI 大佬监测」周刊的主笔。以下是本周（截至 {today}，过去 7 天）对 11 位 AI 行业领袖的公开动态监测数据，按人物分组，每条含标题、来源、日期、简介、链接：
+
+【数据】
+{json.dumps(payload, ensure_ascii=False, indent=1)}
+
+【任务】基于以上材料撰写本周选题周报，严格使用 Markdown，结构如下（章节标题照抄）：
+
+# AI 大佬动态监测 · 选题周报
+
+开头一行加粗：「{today} · 监测窗口：过去 7 天」，随后用一个表格概述本期（监测名单 / 信源构成 / 本周基调一句话）。
+
+## 本周最重磅
+150–250 字叙事，提炼本周最有张力的一条主线（通常是人物观点冲突或标志性事件）。
+
+## 一、本周 10 条核心动态速览
+Markdown 表格：| # | 人物 | 标题 | 关键数据点 | 来源 |。从数据中选出最有价值的 10 条；「关键数据点」列必须简短，只使用数据中出现的事实。表格下方加一段「另含速览」：用一句话串讲其余条目（用 · 分隔）。
+
+## 二、本周 5 条候选选题
+5 张选题卡，每张严格使用如下结构：
+### #N 选题类型 · 主题
+**主标题：** …
+- **方向标签**：…
+- **爆款公式**：…
+- **预估阅读量**：★ 评级（1–5 星）
+- **一句话钩子**：…
+**备选标题**（3–4 个，每个末尾用〔〕标注风格，如〔悬念〕〔争议〕〔反常识〕）
+**关键数据点**（编号列表，只使用数据中的事实）
+**切入角度建议**（一段，给出真正可写的题眼，不要泛泛而谈）
+**律师视角（自然带出）**（一段，从法律/合规角度补一层观察）
+**参考来源**（从数据中选 3–4 条：来源｜标题 — 链接）
+**适配受众**（一行）
+
+选题优先级：人物言论拆解、产业叙事冲突、有争议或反差的事件；兼顾「深度长文」与「短讯快评」两种形态，5 张卡里至少 1 张短讯快评型。
+
+## 三、本周覆盖自查
+表格：| 人物 | 动态条数 | 核心事件 | 入选选题 |。11 人全部列出，本周无动态的人物在核心事件列标注「观察项」。
+
+## 四、本周叙事总结
+2–3 条主线，每条一段；最后加一行「下周看点」。
+
+## 五、下周线索池
+3–4 条编号线索，每条基于本周事件做合理展望，不确定处用「盯：」引出跟踪点；最后加一行「附加跟踪」。
+
+## 六、监控关键词库
+按 3–4 个主题分组列出本期关键词（人物与言论 / 公司与产品 / 治理与监管 / 赛道与技术）。
+
+【硬性规则】
+1. 只能使用【数据】中出现的事实、数字与引语，禁止编造；材料没说的字段写「材料未提及」，不要虚构。
+2. 简介为空的条目（YouTube/播客）允许基于标题做保守概括，但不得添加具体数字与引语。
+3. 全文中文；人物首次出现给出中英对照。
+4. 直接输出 Markdown 正文，不要输出任何解释或寒暄。"""
+
     try:
         r = requests.post(
             f"{base}/chat/completions",
             headers={"Authorization": f"Bearer {key}"},
             json={"model": model,
                   "messages": [{"role": "user", "content": prompt}],
-                  "temperature": 0.3},
-            timeout=120)
+                  "temperature": 0.4,
+                  "max_tokens": 8000},
+            timeout=600)
         r.raise_for_status()
-        content = r.json()["choices"][0]["message"]["content"]
-        data = json.loads(content)
-        arr = data if isinstance(data, list) else data.get("results", [])
-        return {x.get("标题", ""): x for x in arr if isinstance(x, dict)}
+        content = r.json()["choices"][0]["message"]["content"].strip()
+        # 去掉模型可能包裹的 ```markdown 代码围栏
+        content = re.sub(r"^```(?:markdown)?\s*", "", content)
+        content = re.sub(r"\s*```$", "", content)
+        return content if content.startswith("#") else "# " + content
     except Exception as e:
-        print(f"[warn] LLM 摘要失败（{person}），降级为原文简介: {e}", file=sys.stderr)
-        return {}
+        print(f"[warn] LLM 周报生成失败，降级为简版周报: {e}", file=sys.stderr)
+        return ""
 
 
 def build_digest(by_person, llm_results, week_of):
@@ -327,27 +381,26 @@ def main():
         for p in it["people"]:
             by_person.setdefault(p, []).append(it)
 
-    llm_results = {}
-    if os.environ.get("LLM_API_KEY"):
-        for person, items in by_person.items():
-            if items:
-                res = llm_summarize(person, items)
-                if res is not None:
-                    llm_results[person] = res
-
     today = datetime.date.today().isoformat()
-    md = build_digest(by_person, llm_results, today)
-    path = os.path.join(DIGEST_DIR, f"digest-{today}.md")
+
+    # 优先用 LLM 生成 WorkBuddy 版式整周报告；未配置 key 或调用失败时降级为简版
+    report = llm_weekly_report(by_person, today)
+    is_full = bool(report)
+    if not is_full:
+        report = build_digest(by_person, {}, today)
+    path = os.path.join(DIGEST_DIR,
+                        f"report-{today}.md" if is_full else f"digest-{today}.md")
     with open(path, "w", encoding="utf-8") as f:
-        f.write(md)
+        f.write(report)
     save_state(state)
 
     total = sum(len(v) for v in by_person.values())
-    print(f"本周新线索 {total} 条（去重后），周报已写入 {path}")
+    print(f"本周新线索 {total} 条（去重后），周报已写入 {path}"
+          f"（{'LLM 完整版' if is_full else '简版'}）")
 
     webhook = os.environ.get("PUSH_WEBHOOK", "").strip()
     if webhook:
-        push(webhook, md, total)
+        push(webhook, report, total)
 
 
 if __name__ == "__main__":

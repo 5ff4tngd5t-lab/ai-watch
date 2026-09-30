@@ -17,6 +17,7 @@ AI 大佬访谈监测（GitHub Actions 云版）
 """
 
 import datetime
+import html
 import json
 import os
 import re
@@ -54,11 +55,11 @@ NEWS_QUERIES = {
     "Dario Amodei":     '"Dario Amodei" when:7d',
     "Peter Thiel":      '"Peter Thiel" (AI OR interview OR podcast) when:7d',
     "Demis Hassabis":   '"Demis Hassabis" when:7d',
-    "Jensen Huang":     '"Jensen Huang" (AI OR interview OR keynote) when:7d',
-    "Mark Zuckerberg":  '"Mark Zuckerberg" (AI OR Meta OR Llama) when:7d',
-    "Satya Nadella":    '"Satya Nadella" (AI OR Microsoft OR OpenAI) when:7d',
-    "Marc Andreessen":  '"Marc Andreessen" (AI OR a16z) when:7d',
-    "Elon Musk":        '"Elon Musk" (xAI OR Grok OR AI) when:7d',
+    "Jensen Huang":     '"Jensen Huang" (interview OR keynote OR Computex OR GTC OR earnings) when:7d',
+    "Mark Zuckerberg":  '"Mark Zuckerberg" (interview OR podcast OR keynote OR speech OR Llama) when:7d',
+    "Satya Nadella":    '"Satya Nadella" (interview OR podcast OR keynote OR earnings) when:7d',
+    "Marc Andreessen":  '"Marc Andreessen" (interview OR podcast OR essay OR a16z) when:7d',
+    "Elon Musk":        '"Elon Musk" (xAI OR Grok) (interview OR podcast OR keynote OR launch) when:7d',
     "Andrej Karpathy":  '"Karpathy" when:7d',
     "Ilya Sutskever":   '"Ilya Sutskever" OR "Safe Superintelligence" when:7d',
 }
@@ -78,6 +79,9 @@ YOUTUBE_CHANNELS = [
 ]
 
 TRACKING_PARAMS = ("utm_", "fbclid", "gclid", "spm", "ref", "si", "feature", "ved")
+
+# 每人新闻线索上限（Google News 按相关度排序，取前 N 条最有价值的）
+MAX_NEWS_PER_PERSON = 10
 
 
 def norm_url(url):
@@ -152,7 +156,7 @@ def fetch_youtube():
 
 
 def fetch_news():
-    """Google News RSS，按人名检索。失败时降级跳过。"""
+    """Google News RSS，按人名检索（每人最多保留 MAX_NEWS_PER_PERSON 条）。失败时降级跳过。"""
     items = []
     cutoff_ts = time.time() - DAYS * 86400
     for person, query in NEWS_QUERIES.items():
@@ -160,7 +164,10 @@ def fetch_news():
             rss = "https://news.google.com/rss/search?" + urllib.parse.urlencode({
                 "q": query, "hl": "en-US", "gl": "US", "ceid": "US:en"})
             feed = feedparser.parse(rss)
+            n = 0
             for e in feed.entries:
+                if n >= MAX_NEWS_PER_PERSON:
+                    break
                 ts = time.mktime(e.published_parsed) if e.get("published_parsed") else 0
                 if ts and ts < cutoff_ts:
                     continue
@@ -168,14 +175,15 @@ def fetch_news():
                 if e.get("source") and getattr(e["source"], "get", None):
                     src = e["source"].get("title", src)
                 items.append({
-                    "title": e.get("title", "").strip(),
+                    "title": html.unescape(e.get("title", "")).strip(),
                     "url": e.get("link", "").strip(),
                     "source": src,
                     "date": datetime.datetime.fromtimestamp(ts).strftime("%Y-%m-%d") if ts else "未知",
                     "people": [person],
-                    "snippet": re.sub(r"<[^>]+>", "", e.get("summary", ""))[:400],
+                    "snippet": html.unescape(re.sub(r"<[^>]+>", "", e.get("summary", "")))[:400],
                 })
-            print(f"[ok] 新闻检索完成: {person}")
+                n += 1
+            print(f"[ok] 新闻检索完成: {person} ({n} 条)")
         except Exception as e:
             print(f"[warn] 新闻检索失败（已跳过）: {person}: {e}", file=sys.stderr)
     return items

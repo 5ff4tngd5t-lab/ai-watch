@@ -230,10 +230,37 @@ def fetch_news():
     return items
 
 
-def llm_weekly_report(by_person, today):
-    """调用 OpenAI 兼容接口生成整周选题周报（WorkBuddy 版式）。
+def llm_call(key, base, model, prompt):
+    """单次调用 OpenAI 兼容接口，返回文本；失败返回空串。"""
+    try:
+        r = requests.post(
+            f"{base}/chat/completions",
+            headers={"Authorization": f"Bearer {key}"},
+            json={"model": model,
+                  "messages": [{"role": "user", "content": prompt}],
+                  "temperature": 0.4,
+                  "max_tokens": 16000},
+            timeout=900)
+        r.raise_for_status()
+        resp = r.json()
+        choice = resp.get("choices", [{}])[0]
+        msg = choice.get("message", {}) or {}
+        content = (msg.get("content") or "").strip()
+        if not content:
+            print(f"[warn] LLM 返回空内容 (finish_reason={choice.get('finish_reason')})",
+                  file=sys.stderr)
+            return ""
+        return content
+    except Exception as e:
+        print(f"[warn] LLM 调用失败: {e}", file=sys.stderr)
+        return ""
 
-    返回 Markdown 字符串；未配置 key 返回 None；调用失败返回 ""（外层降级为简版）。
+
+def llm_weekly_report(by_person, today):
+    """分段调用 LLM 生成整周选题周报（WorkBuddy 版式）。
+
+    分 4 次调用规避输出上限：头部+速览 / 选题卡1-2 / 选题卡3-5 / 尾部四节。
+    返回 Markdown 字符串；未配置 key 返回 None；任一阶段失败返回 ""（外层降级简版）。
     """
     key = os.environ.get("LLM_API_KEY", "").strip()
     if not key:
@@ -244,84 +271,93 @@ def llm_weekly_report(by_person, today):
     payload = {p: [{"标题": it["title"], "来源": it["source"], "日期": it["date"],
                     "简介": it["snippet"], "链接": it["url"]} for it in items]
                for p, items in by_person.items() if items}
+    data_json = json.dumps(payload, ensure_ascii=False, indent=1)
 
-    prompt = f"""你是资深科技公众号「AI 大佬监测」周刊的主笔。以下是本周（截至 {today}，过去 7 天）对 11 位 AI 行业领袖的公开动态监测数据，按人物分组，每条含标题、来源、日期、简介、链接：
+    common = f"""你是资深科技公众号「AI 大佬监测」周刊的主笔。以下是本周（截至 {today}，过去 7 天）对 11 位 AI 行业领袖的公开动态监测数据，按人物分组，每条含标题、来源、日期、简介、链接：
 
 【数据】
-{json.dumps(payload, ensure_ascii=False, indent=1)}
+{data_json}
 
-【任务】基于以上材料撰写本周选题周报，严格使用 Markdown，结构如下（章节标题照抄）：
+【硬性规则】
+1. 只能使用【数据】中出现的事实、数字与引语，禁止编造；材料没说的写「材料未提及」。
+2. 简介为空的条目（YouTube/播客）允许基于标题做保守概括，但不得添加具体数字与引语。
+3. 全文中文；人物首次出现给出中英对照。
+4. 只输出你负责的那一节，不要输出其他章节，不要寒暄。"""
 
+    s1_prompt = common + """
+
+【你的任务】输出周报的开头部分，严格使用 Markdown：
 # AI 大佬动态监测 · 选题周报
 
-开头一行加粗：「{today} · 监测窗口：过去 7 天」，随后用一个表格概述本期（监测名单 / 信源构成 / 本周基调一句话）。
+开头一行加粗：「{today} · 监测窗口：过去 7 天」，随后一个概述表格（监测名单 11 人 / 信源构成 / 本周基调一句话）。
 
 ## 本周最重磅
-150–250 字叙事，提炼本周最有张力的一条主线（通常是人物观点冲突或标志性事件）。
+150–250 字叙事，提炼本周最有张力的一条主线。
 
 ## 一、本周 10 条核心动态速览
-Markdown 表格：| # | 人物 | 标题 | 关键数据点 | 来源 |。从数据中选出最有价值的 10 条；「关键数据点」列必须简短，只使用数据中出现的事实。表格下方加一段「另含速览」：用一句话串讲其余条目（用 · 分隔）。
+Markdown 表格：| # | 人物 | 标题 | 关键数据点 | 来源 |，选最有价值的 10 条；「关键数据点」列简短，只用数据中的事实。表格下方加一段「另含速览」：用一句话串讲其余条目（用 · 分隔）。""".replace("{today}", today)
 
-## 二、本周 5 条候选选题
-5 张选题卡，每张严格使用如下结构：
+    card_rules = """选题卡严格使用如下结构：
 ### #N 选题类型 · 主题
 **主标题：** …
 - **方向标签**：…
 - **爆款公式**：…
 - **预估阅读量**：★ 评级（1–5 星）
 - **一句话钩子**：…
-**备选标题**（3–4 个，每个末尾用〔〕标注风格，如〔悬念〕〔争议〕〔反常识〕）
-**关键数据点**（编号列表，只使用数据中的事实）
-**切入角度建议**（一段，给出真正可写的题眼，不要泛泛而谈）
-**律师视角（自然带出）**（一段，从法律/合规角度补一层观察）
+**备选标题**（3–4 个，每个末尾用〔〕标注风格）
+**关键数据点**（编号列表，只用数据中的事实）
+**切入角度建议**（一段，给出真正可写的题眼）
+**律师视角（自然带出）**（一段，法律/合规观察）
 **参考来源**（从数据中选 3–4 条：来源｜标题 — 链接）
-**适配受众**（一行）
+**适配受众**（一行）"""
 
-选题优先级：人物言论拆解、产业叙事冲突、有争议或反差的事件；兼顾「深度长文」与「短讯快评」两种形态，5 张卡里至少 1 张短讯快评型。
+    s2_prompt = common + f"""
+
+【你的任务】撰写本周 5 条候选选题中的**前 2 条**（## 二、本周 5 条候选选题 章节下的 #1 和 #2）。
+选题优先级：人物言论拆解、产业叙事冲突、有争议或反差的事件；两条里至少一条「深度长文」型。
+{card_rules}"""
+
+    s3_prompt = common + f"""
+
+【你的任务】撰写本周 5 条候选选题中的**后 3 条**（#3、#4、#5，编号接着上文）。
+选题优先级：人物言论拆解、产业叙事冲突、有争议或反差的事件；至少一条「短讯快评」型；可从扎克伯格/Meta、马斯克/xAI、哈萨比斯/DeepMind、a16z 学院等未充分使用的素材中选。
+{card_rules}"""
+
+    s4_prompt = common + """
+
+【你的任务】输出周报的收尾部分，严格使用 Markdown（章节标题照抄）：
 
 ## 三、本周覆盖自查
-表格：| 人物 | 动态条数 | 核心事件 | 入选选题 |。11 人全部列出，本周无动态的人物在核心事件列标注「观察项」。
+表格：| 人物 | 动态条数 | 核心事件 | 入选选题 |。11 人全部列出，本周无动态的人物标注「观察项」。
 
 ## 四、本周叙事总结
-2–3 条主线，每条一段；最后加一行「下周看点」。
+2–3 条主线，每条一段；最后一行「下周看点：…」。
 
 ## 五、下周线索池
-3–4 条编号线索，每条基于本周事件做合理展望，不确定处用「盯：」引出跟踪点；最后加一行「附加跟踪」。
+3–4 条编号线索，基于本周事件做合理展望，不确定处用「盯：」；最后一行「附加跟踪：…」。
 
 ## 六、监控关键词库
-按 3–4 个主题分组列出本期关键词（人物与言论 / 公司与产品 / 治理与监管 / 赛道与技术）。
+按 3–4 个主题分组列出本期关键词（人物与言论 / 公司与产品 / 治理与监管 / 赛道与技术）。"""
 
-【硬性规则】
-1. 只能使用【数据】中出现的事实、数字与引语，禁止编造；材料没说的字段写「材料未提及」，不要虚构。
-2. 简介为空的条目（YouTube/播客）允许基于标题做保守概括，但不得添加具体数字与引语。
-3. 全文中文；人物首次出现给出中英对照。
-4. 直接输出 Markdown 正文，不要输出任何解释或寒暄。"""
-
-    try:
-        r = requests.post(
-            f"{base}/chat/completions",
-            headers={"Authorization": f"Bearer {key}"},
-            json={"model": model,
-                  "messages": [{"role": "user", "content": prompt}],
-                  "temperature": 0.4,
-                  "max_tokens": 32000},
-            timeout=900)
-        r.raise_for_status()
-        resp = r.json()
-        choice = resp.get("choices", [{}])[0]
-        msg = choice.get("message", {}) or {}
-        content = (msg.get("content") or "").strip()
-        if not content:
-            print(f"[warn] LLM 返回空内容 (finish_reason={choice.get('finish_reason')}): "
-                  f"{str(resp)[:300]}", file=sys.stderr)
+    parts = [
+        ("头部+速览", s1_prompt),
+        ("选题卡 #1-2", s2_prompt),
+        ("选题卡 #3-5", s3_prompt),
+        ("收尾四节", s4_prompt),
+    ]
+    sections = []
+    for name, prompt in parts:
+        text = llm_call(key, base, model, prompt)
+        if not text:
+            print(f"[warn] 分段「{name}」生成失败", file=sys.stderr)
             return ""
-        # 去掉模型可能包裹的 ```markdown 代码围栏
-        content = re.sub(r"^```(?:markdown)?\s*", "", content)
-        content = re.sub(r"\s*```$", "", content)
-        return content if content.startswith("#") else "# " + content
-    except Exception as e:
-        print(f"[warn] LLM 周报生成失败，降级为简版周报: {e}", file=sys.stderr)
-        return ""
+        # 去掉模型可能包裹的代码围栏
+        text = re.sub(r"^```(?:markdown)?\s*", "", text.strip())
+        text = re.sub(r"\s*```$", "", text)
+        sections.append(text.strip())
+
+    report = "\n\n".join(sections) + "\n"
+    return report if report.startswith("#") else "# " + report
 
 
 def build_digest(by_person, llm_results, week_of):
